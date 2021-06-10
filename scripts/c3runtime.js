@@ -3561,15 +3561,15 @@ timer)}this._UpdateTickState()}Tick(){const dt=this._runtime.GetDt(this._inst);f
 		C3.Plugins.Audio,
 		C3.Plugins.VKBridge,
 		C3.Plugins.Mouse,
-		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.System.Cnds.OnLayoutStart,
-		C3.Plugins.System.Acts.SetGroupActive,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.LocalStorage.Acts.SetItem,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.System.Acts.SetGroupActive,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.VKBridge.Acts.JoinGroup,
+		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Behaviors.Bullet.Cnds.CompareSpeed,
 		C3.Plugins.Keyboard.Cnds.IsKeyDown,
 		C3.Plugins.Sprite.Cnds.IsOverlappingOffset,
@@ -3810,7 +3810,6 @@ timer)}this._UpdateTickState()}Tick(){const dt=this._runtime.GetDt(this._inst);f
 	}
 
 	self.C3_ExpressionFuncs = [
-		() => "GamePlay",
 		() => "Lvl_Max_Tomb",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -3818,6 +3817,7 @@ timer)}this._UpdateTickState()}Tick(){const dt=this._runtime.GetDt(this._inst);f
 		},
 		() => 0,
 		() => "",
+		() => "GamePlay",
 		() => 3,
 		() => 204776493,
 		() => 6,
