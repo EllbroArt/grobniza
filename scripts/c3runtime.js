@@ -3561,6 +3561,7 @@ timer)}this._UpdateTickState()}Tick(){const dt=this._runtime.GetDt(this._inst);f
 		C3.Plugins.Audio,
 		C3.Plugins.VKBridge,
 		C3.Plugins.Mouse,
+		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.LocalStorage.Acts.SetItem,
@@ -3570,7 +3571,6 @@ timer)}this._UpdateTickState()}Tick(){const dt=this._runtime.GetDt(this._inst);f
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.VKBridge.Acts.JoinGroup,
-		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Behaviors.Bullet.Cnds.CompareSpeed,
 		C3.Plugins.Keyboard.Cnds.IsKeyDown,
 		C3.Plugins.Sprite.Cnds.IsOverlappingOffset,
@@ -3629,6 +3629,8 @@ timer)}this._UpdateTickState()}Tick(){const dt=this._runtime.GetDt(this._inst);f
 		C3.Plugins.VKBridge.Acts.ShowInvite,
 		C3.Plugins.VKBridge.Acts.ShowWall,
 		C3.Plugins.VKBridge.Acts.LeaderBoardVKUI,
+		C3.Plugins.VKBridge.Cnds.AdsMobileSuccess,
+		C3.Plugins.VKBridge.Cnds.ShowAdsSuccess,
 		C3.Plugins.VKBridge.Acts.BridgeConnect,
 		C3.Plugins.LocalStorage.Acts.CheckItemExists,
 		C3.Plugins.VKBridge.Cnds.BridgeConnectSuccess,
@@ -3811,6 +3813,7 @@ timer)}this._UpdateTickState()}Tick(){const dt=this._runtime.GetDt(this._inst);f
 	}
 
 	self.C3_ExpressionFuncs = [
+		() => "GamePlay",
 		() => "Lvl_Max_Tomb",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -3818,7 +3821,6 @@ timer)}this._UpdateTickState()}Tick(){const dt=this._runtime.GetDt(this._inst);f
 		},
 		() => 0,
 		() => "",
-		() => "GamePlay",
 		() => "Передвигайся с помощью WASD. Собирай ключи, чтобы выбраться из гробницы.\nПодбери меч, чтобы уничтожать демонов!",
 		() => 3,
 		() => 204776493,
